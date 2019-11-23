@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Script" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-23T16:55:36" hostname="DESKTOP-E9A41FJ" time="15.751">
+  <properties/>
+  <testcase name="testGoogleSearch" classname="Script" time="15.751"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}) on port 42101
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+нояб. 23, 2019 7:55:43 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>

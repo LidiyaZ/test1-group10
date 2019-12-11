@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TenIE" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-11T16:49:29" hostname="DESKTOP-E9A41FJ" time="16.632">
+  <properties/>
+  <testcase name="testGoogleSearch" classname="TenIE" time="16.632"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Started InternetExplorerDriver server (32-bit)
+3.150.1.0
+Listening on port 34861
+Only local connections are allowed
+дек. 11, 2019 7:49:35 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>

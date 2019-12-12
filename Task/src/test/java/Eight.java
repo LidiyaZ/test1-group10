@@ -26,15 +26,12 @@ public class Eight {
         driver.get("http://localhost/litecart/en/");
         //Thread.sleep(2000);
 
-        List<WebElement> productS = driver.findElements(By.cssSelector(".products"));
+        List<WebElement> productS = driver.findElements(By.cssSelector(".product"));
         for (int i = 0; i < productS.size(); i++) {
-            List<WebElement> product = productS.get(i).findElements(By.cssSelector(".product"));
-            for (int j = 0; j < product.size(); j++) {
-                List<WebElement> sticker = product.get(j).findElements(By.cssSelector(".sticker"));
+                List<WebElement> sticker = productS.get(i).findElements(By.cssSelector(".sticker"));
                 if (sticker.size() != 1) throw new InterruptedException();
             }
         }
-   }
 
 
     @After

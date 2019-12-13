@@ -45,7 +45,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.Eight">
+  <component name="RunManager" selected="Gradle.Eleven">
     <configuration name="Eight" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -66,12 +66,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="NineB" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Eleven" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;NineB&quot;" />
+        <option name="scriptParameters" value="--tests &quot;Eleven&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -86,12 +86,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TenChrome" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Nine" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;TenChrome&quot;" />
+        <option name="scriptParameters" value="--tests &quot;Nine&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -148,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Eleven" />
+        <item itemvalue="Gradle.Nine" />
         <item itemvalue="Gradle.Eight" />
         <item itemvalue="Gradle.TenIE" />
         <item itemvalue="Gradle.TenFirefox" />
-        <item itemvalue="Gradle.TenChrome" />
-        <item itemvalue="Gradle.NineB" />
       </list>
     </recent_temporary>
   </component>

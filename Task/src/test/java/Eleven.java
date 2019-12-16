@@ -6,6 +6,11 @@ import org.junit.Test;
 import org.junit.Before;
 import org.junit.After;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
 public class Eleven {
     private WebDriver driver;
     private WebDriverWait wait;
@@ -20,6 +25,12 @@ public class Eleven {
     public void testGoogleSearch() throws InterruptedException {
 
         driver.get("http://localhost/litecart/en/");
+
+        DateFormat df = new SimpleDateFormat("ddMMyyyyHHmmss");
+        Date today = Calendar.getInstance().getTime();
+        String todayDate = df.format(today);
+        String newmail = ("mailfortest_" + todayDate + "@gmail.com");
+
         WebElement newCustomerLink = driver.findElement(By.cssSelector("#box-account-login a"));
         newCustomerLink.click();
         Thread.sleep(1000);
@@ -35,11 +46,13 @@ public class Eleven {
         city.sendKeys("Color");
         WebElement countries = driver.findElement(By.cssSelector("span.select2"));
         countries.click();
+        Thread.sleep(1000);
         WebElement countrySelected = driver.findElement(By.cssSelector("input.select2-search__field"));
         countrySelected.sendKeys("United States");
         countrySelected.sendKeys(Keys.ENTER);
         WebElement email = driver.findElement(By.cssSelector("#create-account [name=email]"));
-        email.sendKeys("abra.kodabra@kodabra.ru");
+        email.sendKeys(newmail);
+        Thread.sleep(2000);
         WebElement phone = driver.findElement(By.cssSelector("#create-account [name=phone]"));
         phone.sendKeys("+79991112223344");
         WebElement password = driver.findElement(By.cssSelector("#create-account [name=password]"));
@@ -48,7 +61,7 @@ public class Eleven {
         confirmedPassword.sendKeys("password");
         WebElement buttonCreate = driver.findElement(By.cssSelector("#create-account [name=create_account]"));
         buttonCreate.click();
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         WebElement zoneCode = driver.findElement(By.name("zone_code"));
         zoneCode.click();
         Thread.sleep(500);
@@ -67,7 +80,7 @@ public class Eleven {
         logout.click();
         Thread.sleep(1000);
         WebElement accountEmail = driver.findElement(By.cssSelector("#box-account-login [name=email]"));
-        accountEmail.sendKeys("abra.kodabra@kodabra.ru");
+        accountEmail.sendKeys(newmail);
         WebElement accountPassword = driver.findElement(By.cssSelector("#box-account-login [name=password]"));
         accountPassword.sendKeys("password");
         WebElement buttonLogin = driver.findElement(By.cssSelector("#box-account-login [name=login]"));

@@ -83,7 +83,7 @@ public class Twelve {
         WebElement buttonSave = driver.findElement(By.cssSelector("button[name=save]"));
         buttonSave.click();
         Thread.sleep(1000);
-        
+
         driver.get("http://localhost/litecart/admin/?app=catalog&doc=catalog");
         WebElement check = driver.findElement(By.cssSelector(".dataTable .row.semi-transparent"));
         check.click();

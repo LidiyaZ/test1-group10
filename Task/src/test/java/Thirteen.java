@@ -58,7 +58,8 @@ public class Thirteen {
          buttonAddToCart.click();
  //        Thread.sleep(3000);
          wait.until(not(elementToBeClickable(buttonAddToCart)));
-         wait.until(alertIsPresent()).accept();
+         Alert alert = driver.switchTo().alert();
+         alert.accept();
          wait.until(elementToBeClickable(buttonAddToCart));
  //       Thread.sleep(3000);
 
